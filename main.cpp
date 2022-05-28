@@ -112,6 +112,16 @@ SomeThing LittleFunc(/* invoke copy constructor to initialize */SomeThing some_t
     return some_thing;
 }
 
+class A {
+    SomeThing some_;
+
+public:
+    // move semantics must be used in initial list, it cannot be used in body of constructor,
+    // otherwise assign op will be invoked.
+    A(SomeThing someThing) : some_(std::move(someThing)) {
+    }
+};
+
 int main() {
     // default constructor
     {
@@ -195,7 +205,13 @@ int main() {
         // then the real param is temp var which is a type of read only value, so move constructor
         // will be invoked. move semantics will fail if compiler optimization opened.
         ForMove(SomeThing(100));
+
+        A a(SomeThing(100));
     }
+
+
+
+
     return 0;
 }
 
