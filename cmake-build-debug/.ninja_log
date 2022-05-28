@@ -1,0 +1,9 @@
+# ninja log v5
+0	58	1653749648692290049	build.ninja	1d29cb1dfcb71ef6
+3	357	1653749480140590164	CMakeFiles/c___class_special_function.dir/main.cpp.o	95fb1316d1d873be
+357	395	1653749480181815359	c___class_special_function	40eb44d19337d09e
+0	53	1653749648692290049	build.ninja	1d29cb1dfcb71ef6
+1	346	1653749649044898801	CMakeFiles/c___class_special_function.dir/main.cpp.o	95fb1316d1d873be
+346	387	1653749649087731474	c___class_special_function	40eb44d19337d09e
+1	422	1653749706234281578	CMakeFiles/c___class_special_function.dir/main.cpp.o	95fb1316d1d873be
+422	472	1653749706287548028	c___class_special_function	40eb44d19337d09e
